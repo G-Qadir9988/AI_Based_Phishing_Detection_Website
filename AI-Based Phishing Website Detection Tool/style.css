@@ -1,0 +1,105 @@
+/* style.css */
+
+/* --- GLOBAL BACKGROUND --- */
+.stApp {
+    background: linear-gradient(var(--bg-overlay), var(--bg-overlay)), 
+                url("https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070");
+    background-size: cover; 
+    background-attachment: fixed;
+    color: var(--text) !important;
+}
+
+/* --- SIDEBAR FIX --- */
+[data-testid="stSidebar"] {
+    background-color: var(--sidebar-bg) !important;
+}
+[data-testid="stSidebar"] p, [data-testid="stSidebar"] span, 
+[data-testid="stSidebar"] h2, [data-testid="stSidebar"] label {
+    color: var(--text) !important;
+    font-weight: 700 !important;
+}
+
+/* --- CARDS & BLOCKS --- */
+.main-block, .url-scanner-card {
+    background: var(--block-bg) !important;
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    border: 1px solid var(--border) !important;
+    padding: 2rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+/* --- TYPOGRAPHY --- */
+h1, h2, h3, p, span, label, [data-testid="stMetricValue"], [data-testid="stMetricLabel"] p {
+    color: var(--text) !important;
+}
+
+.hero-title {
+    font-size: 4rem !important;
+    font-weight: 900 !important;
+    background: linear-gradient(to right, var(--primary), #00d4ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0 !important;
+}
+
+/* --- INPUT FIELD FIX (CRITICAL) --- */
+div[data-testid="stTextInput"] input {
+    color: var(--text) !important;
+    -webkit-text-fill-color: var(--text) !important;
+    background-color: rgba(0, 0, 0, 0.05) !important;
+    border: 2px solid var(--primary) !important;
+    border-radius: 12px !important;
+    font-weight: 600 !important;
+}
+
+div[data-testid="stTextInput"] input::placeholder {
+    color: var(--text);
+    opacity: 0.4;
+}
+
+/* --- BUTTONS --- */
+.stButton>button {
+    background: var(--primary) !important;
+    color: #FFFFFF !important;
+    border-radius: 12px !important;
+    border: none !important;
+    font-weight: 700 !important;
+    transition: 0.3s ease;
+}
+
+.stButton>button:hover {
+    box-shadow: 0 0 15px var(--primary);
+    transform: scale(1.02);
+}
+
+/* --- DATAFRAME TOOLBAR & TEXT FIX --- */
+
+/* Force table cell text color */
+div[data-testid="stDataFrame"] div[data-testid="stSelectionRow"] {
+    color: var(--text) !important;
+}
+
+/* Force Table Header visibility */
+div[data-testid="stDataFrame"] th {
+    background-color: var(--sidebar-bg) !important;
+    color: var(--text) !important;
+}
+
+/* Fix for the Toolbar (Search, Download, Fullscreen icons) */
+div[data-testid="stElementToolbar"] {
+    background-color: var(--primary) !important;
+    border-radius: 8px;
+    padding: 2px;
+}
+
+div[data-testid="stElementToolbar"] button {
+    color: white !important; /* Icons will be white on the primary color background */
+}
+
+/* Fixing the search box inside the table */
+div[data-testid="stDataFrame"] input {
+    color: var(--text) !important;
+    background-color: var(--block-bg) !important;
+}
