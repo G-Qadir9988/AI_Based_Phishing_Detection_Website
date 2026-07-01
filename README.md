@@ -1,54 +1,47 @@
-# 🛡️ AI Mental Health Companion System
+# 🛡️ Phishing Shield: AI-Based Phishing Website Detection Tool
 
-[![React](https://img.shields.io/badge/Frontend-React%20%2B%20Vite-61dafb?logo=react)](https://react.dev/)
-[![FastAPI](https://img.shields.io/badge/Backend-FastAPI-009688?logo=fastapi)](https://fastapi.tiangolo.com/)
-[![Python](https://img.shields.io/badge/ML%2FNLP-Python%20%2B%20Scikit--Learn-3776AB?logo=python)](https://www.python.org/)
-[![Firebase](https://img.shields.io/badge/Database-Firebase-FFCA28?logo=firebase)](https://firebase.google.com/)
+[![Streamlit](https://img.shields.io/badge/Frontend-Streamlit-FF4B4B?logo=streamlit)](https://streamlit.io/)
+[![Python](https://img.shields.io/badge/Core-Python%20v3.13-3776AB?logo=python)](https://www.python.org/)
+[![Scikit-Learn](https://img.shields.io/badge/ML%20Core-Scikit--Learn-F7931E?logo=scikit-learn)](https://scikit-learn.org/)
 [![License](https://img.shields.io/badge/License-Educational%20Use-green)](#-license)
 
-### 🚀 AI-Powered Mental Health Analysis & Emotion Detection Platform
+### 🚀 AI-Powered Cyber Threat Intelligence & Phishing Link Detection Platform
 
-A professional AI-driven mental health companion system designed to analyze emotions, assess mental health risks, generate intelligent insights, and provide interactive analytics using NLP, Machine Learning, FastAPI, and React.
+A professional cybersecurity auditing tool designed to inspect target URLs, extract deep forensic feature vectors, calculate Shannon entropy/risk parameters, and deliver instant classification verdicts using a Supervised Random Forest Classifier and an interactive, high-contrast Streamlit interface.
 
 ---
 
 ## 👨‍💻 Developed By
 * **Noor Malik** & **Ghulam Qadir**
-* 🎓 *Artificial Intelligence Lab – Final Semester Project*
+* 🎓 *Cyber Security Lab – Final Semester Project*
 * 🏫 *Air University, Islamabad*
 
 ---
 
 ## 📌 Project Description
-The **AI Mental Health Companion System** is a modern web application designed to assist in emotional and mental health monitoring using advanced Machine Learning and Natural Language Processing (NLP). 
+The **AI-Based Phishing Website Detection Tool** is a modern intelligent system engineered to intercept social engineering and brand spoofing attack vectors before deployment. 
 
-The platform seamlessly extracts emotional vectors from user text inputs and maps demographic variables to predict potential mental health constraints.
-
-### Core Architecture Components:
-* 🧠 **Emotion Detection using NLP:** Contextual understanding of conversational features.
-* 📊 **Mental Health Risk Assessment:** Multi-variate predictive risk grouping.
-* 📈 **AI Insights & Analytics:** Dynamic charts for trend forecasting.
-* 📝 **Journal Analysis:** Text semantic parsing for mood monitoring.
-* 🤖 **AI Prediction Models:** Classifiers optimized via Python training pipelines.
+The system operates via a dual-layer defensive approach:
+1. **Rule-Based Heuristic Parser:** Client-side runtime validation of brand spoofing indicators, token entropy, domain obfuscation patterns, and transport layer security (HTTPS).
+2. **Supervised Machine Learning Core:** Backend processing utilizing an optimized Random Forest Ensemble Model trained on extensive datasets to detect zero-day phishing infrastructure.
 
 ---
 
 ## ✨ Key Features
 
-### 🧠 AI & Data Science
-* **Emotion Mapping:** Token-based textual semantic classification.
-* **Student Mental Health Predictor:** Predictive modeling utilizing structured behavioral inputs.
-* **Risk Engine:** Real-time generation of priority flags for critical mental stress parameters.
+### 🧠 AI & Data Science Features
+* **Random Forest Classifier Core:** High-precision array tree classification running on `phishing_model_professional.pkl`.
+* **Heuristic Feature Breakdown:** Instant tabular dissection of URL parameters (Brand impersonation checks for PayPal, Google, Binance, etc.).
+* **Smart Risk Engine:** Real-time generation of weighted priority safety metrics based on suspicious tokens and red flags.
 
-### 💻 Frontend Suite
-* **Fast React + Vite Architecture:** Optimized build configs for sub-second hot reloading.
-* **Interactive Dashboard:** Beautifully animated telemetry charts and dashboard layout.
-* **Cross-Device Responsive UI:** Designed with high contrast visibility modes.
+### 💻 Frontend Suite Features
+* **Dynamic Theme Control:** Completely responsive architecture adapting instantly to high-contrast **Light Mode** and **Dark Mode** user choices.
+* **Streamlit Pipeline:** Fast and responsive text rendering layers engineered to solve "white-on-white" text visibility bugs.
+* **Session State Log Logic:** Complete session tracking with an integrated Undo option to reverse previous scans.
 
-### ⚙️ Backend & API Ecosystem
-* **High-Performance Routing:** Modular backend architecture driven by FastAPI.
-* **Predictive Endpoints:** Low-latency JSON-based model inference endpoints.
-* **Interactive Documentation:** Native swagger spec routing out of the box.
+### ⚙️ Engine Operations & Controls
+* **Live Telemetry Specs:** Simulated server health counters tracking blocked packets and active firewall states.
+* **Log Purging & Exports:** Interactive logging table providing one-click tabular actions to download history arrays or wipe caches.
 
 ---
 
@@ -56,48 +49,49 @@ The platform seamlessly extracts emotional vectors from user text inputs and map
 
 | Technology | Purpose |
 | :--- | :--- |
-| **React.js** | Single Page Application Frontend UI Layer |
-| **Vite** | Modern Frontend Tooling & Fast Bundling |
-| **FastAPI** | High-Performance REST API Routing |
-| **Python** | AI Core Infrastructure & Pipeline Logic |
-| **Scikit-learn** | Model Compilation & Classic ML Classifiers |
-| **Transformers / PyTorch** | Deep Learning Text Processing Environments |
-| **Firebase** | Scalable NoSQL Data Persistence Layer |
-| **Pandas & NumPy** | Matrix Math & Structural Data Wrangling |
-| **Matplotlib & Seaborn** | Static Report Analysis Chart Renderers |
+| **Streamlit** | Unified Frontend Engine & Interactive Dashboard Layout |
+| **Python** | System Core Backend Automation & Algorithmic Computations |
+| **Scikit-learn** | Random Forest Training Pipelines & Model Tuning |
+| **Pandas** | Tabular Matrix Configurations & Data Wrangling |
+| **NumPy** | High-Performance Array Mathematics |
+| **Joblib** | Model Serialization and Binary Serialization Deployment |
+| **Hashlib** | MD5 Generation for Unique Investigation Identifier Tags |
 
 ---
 
 ## 📂 Project Structure
 
 ```text
-ai-mental-health-companion/
+AI-Based-Phishing-Website-Detection-Tool/
 ├── backend/
 │   ├── dataset/
-│   │   ├── Emotions dataset for NLP/ (test.txt, train.txt, val.txt)
-│   │   └── Student Mental health/ (Student Mental health.csv)
+│   │   └── Phishing_Legitimate_full.csv
 │   ├── models/
 │   ├── venv/
-│   ├── emotion_nlp_model.pkl
-│   ├── emotion_vectorizer.pkl
-│   ├── main.py
-│   ├── train_emotion_nlp.py
-│   └── train_predictor.py
+│   ├── app.py
+│   ├── phishing_model_professional.pkl
+│   └── train.py
 ├── demo/
-│   ├── (Screenshots & Video assets)
+│   ├── .gitkeep
+│   ├── dashboard.jpeg
+│   ├── detected_emotions.jpeg
+│   ├── developers_info.jpeg
+│   ├── insights_logs.jpeg
+│   ├── journal_analysis.jpeg
+│   ├── risk_assessment_profile_1.jpeg
+│   ├── risk_assessment_profile_2.jpeg
+│   ├── settings.jpeg
+│   ├── tech_community_and_content_channels.jpeg
+│   ├── video demo link.txt
 │   └── Video Project 1.mp4
-├── frontend/
-│   ├── public/
-│   ├── src/
-│   ├── index.html
-│   └── package.json
-├── notebooks/
-│   ├── Journal_Text_Analysis.ipynb
-│   └── Student_Mental_Health_Analysis.ipynb
-└── report/
-    ├── AI Mental Health report.docx
-    └── AI Mental Health report.pdf
-
+├── report/
+│   ├── .gitkeep
+│   ├── Phishing Detection Report.docx
+│   └── Phishing Detection Report.pdf
+├── .gitattributes
+├── .gitignore
+├── LICENSE
+└── README.md
 
 ⚙️ Complete Setup Guide
 🔹 Frontend Setup (React + Vite)
@@ -147,6 +141,8 @@ python train_emotion_nlp.py
 Run Experimental Notebooks
 Bash
 jupyter lab
+
+
 📸 Project Screenshots
 🏠 Dashboard
 😊 Detected Emotions
@@ -206,3 +202,4 @@ Special thanks to our supervisor Sir Yasir Ali, our mentors, and the broader ope
 Relative Paths Check: App ne ./demo/dashboard.jpeg wagaira ke paths bilkul sahi folder structure ke mutabiq map kiye hain, is liye GitHub par images direct load ho jayengi.
 
 Badges Styling: Page ke header mein standard clean shields (React, FastAPI, Python) add kiye hain jo visibility score barha dete hain.
+
